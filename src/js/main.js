@@ -4,7 +4,9 @@ var reportsWidget = {
         template: (
             '{{#.}}' +
             '<article class="reports_item">' +
-            '<a href="{{url}}" target="_blank">' +
+            '{{#documents}}' +
+            '<a href="{{url}}" target="_blank">' + // Change here: href="{{url}}"
+            '{{/documents}}' +
             '<img class="reports_cover" src="{{cover}}" alt="{{title}} Cover" title="{{title}} Cover"/>' +
             '</a>' +
             '<footer class="reports_docs">' +
